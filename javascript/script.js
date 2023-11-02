@@ -19,7 +19,9 @@ $(document).ready(function () {
     /* Sections navbar */
     $("#sectionsNavbar button").click(() => {
         $("#sectionsNavbar").toggleClass("-translate-x-full");
-        $("#sectionsNavbar button svg").toggleClass("rotate-180");
+        $("#sectionsNavbar button svg").toggleClass("rotate-90");
     })
 
+
+    /* Categories section */
 });

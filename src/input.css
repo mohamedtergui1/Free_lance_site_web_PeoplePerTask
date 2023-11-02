@@ -2,6 +2,24 @@
 @tailwind components;
 @tailwind utilities;
 
-.transition-left {
-    transition: left 1s;
+/* Categories */
+.categories-section li {
+    background-size: cover;
+    background-position: center;
+}
+
+.categories-section .carousel-card:hover {
+    border-bottom: 2px solid gray;
+}
+
+.categories-section .carousel-card:hover a h3 {
+    text-decoration: underline;
+}
+
+.categories-section .carousel-card div {
+    background-image: linear-gradient(to bottom, rgba(78, 78, 78, 0.446), rgba(172, 172, 172, 0));
+}
+
+.scrollleft:disabled svg path , .scrollRight:disabled svg path{
+    fill: rgb(169, 169, 169);
 }
