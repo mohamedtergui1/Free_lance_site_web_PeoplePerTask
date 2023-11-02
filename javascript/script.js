@@ -1,5 +1,5 @@
 $( document ).ready(function() {
-    $("#hamberger_btn").click(() => {
-        $("#navbar").slideToggle(500);
-    })
+    $("#hamberger_btn").click(function(){
+    $("#navbar").slideToggle(500);
+   })
 });
