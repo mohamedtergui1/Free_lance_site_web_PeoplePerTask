@@ -69,7 +69,8 @@
 
   <!-- Hero section -->
   <section class="hero-section body-font relative">
-    <div id="sectionsNavbar" class="absolute w-2/3 md:w-1/2 lg:w-1/4 transition-all duration-500 -translate-x-full ml-2">
+    <!-- Sections Navbar -->
+    <div id="sectionsNavbar" class="absolute w-2/3 md:w-1/2 lg:w-1/4 transition-all z-50 duration-500 -translate-x-full ml-2">
       <button class="absolute right-0 -mr-10 bg-slate-100 p-3 drop-shadow-lg rounded-md">
         <svg class="" xmlns="http://www.w3.org/2000/svg" width="10" height="15" viewBox="0 0 10 15" fill="none">
           <path fill-rule="evenodd" clip-rule="evenodd" d="M8.88069 6.10123C9.16159 6.38248 9.31937 6.76373 9.31937 7.16123C9.31937 7.55873 9.16159 7.93998 8.88069 8.22123L3.22469 13.8792C2.9433 14.1605 2.56169 14.3185 2.16384 14.3184C1.76598 14.3183 1.38445 14.1601 1.10319 13.8787C0.821928 13.5973 0.663969 13.2157 0.664063 12.8179C0.664156 12.42 0.822295 12.0385 1.10369 11.7572L5.69969 7.16123L1.10369 2.56523C0.830316 2.28246 0.678944 1.90362 0.682175 1.51033C0.685406 1.11703 0.842981 0.740732 1.12096 0.462488C1.39895 0.184244 1.77509 0.0263128 2.16839 0.0227108C2.56168 0.0191088 2.94066 0.170125 3.22369 0.443232L8.88169 6.10023L8.88069 6.10123Z" fill="#05DB0E"/>
@@ -78,7 +79,7 @@
       <ul class="flex flex-col rounded-xl shadow-custom-green drop-shadow-xl bg-slate-100 bg-opacity-95 p-3">
         <li class="">
           <a href="#" class="flex flex-row justify-between items-center py-2 hover:bg-slate-200 hover:bg-opacity-40">
-            <p class="mr-auto text-lg font-semibold">Most Pupular Categories</p>
+            <p class="mr-auto text-sm md:text-lg font-semibold">Most Pupular Categories</p>
             <span>
               <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 9 9" fill="none">
                 <g id="teenyicons:down-solid" clip-path="url(#clip0_189_1042)">
@@ -97,7 +98,7 @@
         
         <li class="">
           <a href="#" class="flex flex-row justify-between items-center py-2 hover:bg-slate-200 hover:bg-opacity-40">
-            <p class="mr-auto text-lg font-semibold">Most Pupular Freelancers</p>
+            <p class="mr-auto text-sm md:text-lg font-semibold">Most Pupular Freelancers</p>
             <span>
               <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 9 9" fill="none">
                 <g id="teenyicons:down-solid" clip-path="url(#clip0_189_1042)">
@@ -116,7 +117,7 @@
 
         <li class="">
           <a href="#" class="flex flex-row justify-between items-center py-2 hover:bg-slate-200 hover:bg-opacity-40">
-            <p class="mr-auto text-lg font-semibold">Trending Offres</p>
+            <p class="mr-auto text-sm md:text-lg font-semibold">Trending Offres</p>
             <span>
               <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 9 9" fill="none">
                 <g id="teenyicons:down-solid" clip-path="url(#clip0_189_1042)">
@@ -135,7 +136,7 @@
 
         <li class="">
           <a href="#" class="flex flex-row justify-between items-center py-2 hover:bg-slate-200 hover:bg-opacity-40">
-            <p class="mr-auto text-lg font-semibold">Testimonials</p>
+            <p class="mr-auto text-sm md:text-lg font-semibold">Testimonials</p>
             <span>
               <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 9 9" fill="none">
                 <g id="teenyicons:down-solid" clip-path="url(#clip0_189_1042)">
@@ -153,7 +154,9 @@
         <hr class="border-b-custom-green border">
       </ul>
     </div>
+    <!-- end Section Navbar -->
 
+    <!-- Hero container -->
     <div class="mx-auto flex px-1 lg:px-8 md:flex-row md:justify-evenly flex-col-reverse items-center h-fit">
       <div class=" md:w-1/2 flex flex-col md:items-start md:text-left mb-16 md:mb-0 items-center text-center py-12">
         <p class="title-font text-5xl md:text-6xl mb-6 font-medium lg:w-4/5 text-custom-green-">Make bright
@@ -336,29 +339,30 @@
         </ul>
 
         <ul class="mt-5 text-center flex flex-row justify-center">
-          <li
-            class="slideBtn hover:cursor-pointer rounded-full w-1.5 h-1.5 mx-2 hover:bg-custom-green bg-custom-green-">
+          <li class="slideBtn hover:bg-custom-green- hover:cursor-pointer rounded-full w-1.5 h-1.5 mx-2 bg-custom-green-">
             <a href="#slide1"></a>
           </li>
-          <li class="slideBtn hover:cursor-pointer rounded-full w-1.5 h-1.5 mx-2 bg-gray-300 hover:bg-amber-400">
-            <a
-              href="#slide2"></a></li>
-          <li class="slideBtn hover:cursor-pointer rounded-full w-1.5 h-1.5 mx-2 bg-gray-300 hover:bg-purple-500">
-            <a
-              href="#slide3"></a></li>
-          <li class="slideBtn hover:cursor-pointer rounded-full w-1.5 h-1.5 mx-2 bg-gray-300 hover:bg-indigo-950">
-            <a
-              href="#slide4"></a></li>
-          <li class="slideBtn hover:cursor-pointer rounded-full w-1.5 h-1.5 mx-2 bg-gray-300 hover:bg-red-800">
-            <a
-              href="#slide5"></a></li>
+
+          <li class="slideBtn hover:bg-amber-300 hover:cursor-pointer rounded-full w-1.5 h-1.5 mx-2 bg-gray-300">
+            <a href="#slide2"></a></li>
+
+          <li class="slideBtn hover:bg-purple-400 hover:cursor-pointer rounded-full w-1.5 h-1.5 mx-2 bg-gray-300">
+            <a href="#slide3"></a></li>
+
+          <li class="slideBtn hover:bg-indigo-800 hover:cursor-pointer rounded-full w-1.5 h-1.5 mx-2 bg-gray-300">
+            <a href="#slide4"></a></li>
+
+          <li class="slideBtn hover:bg-red-700 hover:cursor-pointer rounded-full w-1.5 h-1.5 mx-2 bg-gray-300">
+            <a href="#slide5"></a></li>
         </ul>
 
       </div>
     </div>
+    <!-- end Hero container -->
   </section>
   <!-- end Hero section -->
 
+  
 
 
 
