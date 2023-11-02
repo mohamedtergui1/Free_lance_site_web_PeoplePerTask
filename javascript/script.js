@@ -1,6 +1,7 @@
 $( document ).ready(function() {
     $("#hamberger_btn").click(function(){
     $("#navbar").slideToggle(500);
+
    })
    $("#btn_sidebar").click(function(){
       $("#sidebar").addClass("-translate-x");
@@ -13,3 +14,4 @@ $( document ).ready(function() {
    });
 
 });
+
