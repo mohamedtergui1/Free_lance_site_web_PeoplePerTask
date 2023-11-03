@@ -1301,6 +1301,10 @@ video {
   --tw-bg-opacity: 0.95;
 }
 
+.bg-cover {
+  background-size: cover;
+}
+
 .bg-no-repeat {
   background-repeat: no-repeat;
 }
