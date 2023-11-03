@@ -17,7 +17,7 @@
 }
 
 .categories-section .carousel-card div {
-    background-image: linear-gradient(to bottom, rgba(78, 78, 78, 0.446), rgba(172, 172, 172, 0));
+    background-image: linear-gradient(to bottom, rgba(78, 78, 78, 0.446), rgba(243, 243, 243, 0), rgba(172, 172, 172, 0));
 }
 
 .scrollleft:disabled svg path , .scrollRight:disabled svg path{

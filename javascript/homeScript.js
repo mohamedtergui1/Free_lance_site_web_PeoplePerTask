@@ -130,7 +130,7 @@ let categoriesInfos = [
     }
 ]
 
-let categoriesCards = Array.from(document.querySelectorAll('.carousel-card'));
+let categoriesCards = document.querySelectorAll('.categories-section .carousel-card');
 
 let makeCards = (infos) => {
     let i=0;

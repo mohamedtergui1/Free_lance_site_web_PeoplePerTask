@@ -168,7 +168,7 @@
         <p class="mb-8 leading-relaxed text-lg lg:w-4/6">Access global talent on the freelancer website trusted
           by over 1 million businesses worldwide.</p>
         <form class="flex w-full md:justify-start justify-center items-end">
-          <div class="relative md:w-full lg:w-full xl:w-2/3 w-2/4 p-0">
+          <div class="relative w-2/3 md:w-full lg:w-full xl:w-2/3 p-0">
             <input type="text" id="hero-field" name="hero-field" placeholder="Try 'web development' "
               class="h-14 w-full drop-shadow-md bg-white rounded-l-lg border bg-opacity-50 border-gray-300 focus:ring-1 focus:ring-custom-green focus:bg-transparent focus:border-custom-green text-base outline-none text-gray-500 py-2 px-6 leading-8 transition-colors duration-200 ease-in-out">
           </div>
@@ -181,7 +181,7 @@
             </svg>
           </button>
         </form>
-        <div class="flex flex-row flex-wrap my-4 w-4/5">
+        <div class="flex flex-row flex-wrap my-4 w-4/5 ">
           <span class="text-xs self-center text-gray-500 mr-2">Popular skills:</span>
           <a href="#" class="px-1.5 py-1 mx-1 text-xs font-light text-gray-500 bg-gray-200 rounded-sm">web
             design</a>
@@ -376,10 +376,10 @@
   <section class="categories-section w-full bg-white py-5 px-7">
     <div class="flex flex-col gap-y-5">
       <div class="flex flex-row justify-between w-full mb-3 items-end font-medium">
-        <h2 class="text-lg md:text-xl lg:text-3xl font-semibold w-1/2 ">Most Popular Categories</h2>
+        <h2 class="text-xl md:text-2xl lg:text-3xl font-semibold w-1/2 ">Most Popular Categories</h2>
         <a href="#"
-          class="categoriesLink text-xs md:text-lg lg:text-xl text-blue-500 flex flex-row items-center gap-x-2 px-3 py-1 rounded-lg hover:bg-sky-50">ALL CATEGORIES
-          <span class="mt-1">
+          class="categoriesLink text-xs md:text-lg lg:text-xl text-blue-500 flex flex-row items-center md:gap-x-2 pt-1 rounded-lg hover:bg-sky-50">ALL CATEGORIES
+          <span class="m-0">
             <svg xmlns="http://www.w3.org/2000/svg" width="15" height="12" viewBox="0 0 12 10" fill="none">
               <path
                 d="M7.388 0.528666L11.388 4.52867C11.5086 4.64931 11.5832 4.81595 11.5832 4.99999C11.5832 5.18404 11.5086 5.3507 11.388 5.47132L7.388 9.47132C7.26823 9.5871 7.10487 9.65846 6.92486 9.65846C6.55667 9.65846 6.25819 9.35998 6.25819 8.99179C6.25819 8.81178 6.32955 8.64842 6.44552 8.52846L9.30666 5.66665H1.58333C1.21514 5.66665 0.916656 5.36817 0.916656 4.99998C0.916656 4.63179 1.21514 4.33331 1.58333 4.33331H9.30666L6.44533 1.47131C6.31977 1.34992 6.2418 1.17995 6.2418 0.991776C6.2418 0.623588 6.54028 0.325104 6.90847 0.325104C7.09664 0.325104 7.26678 0.403276 7.388 0.528666Z"
@@ -548,13 +548,16 @@
 
 
   <!-- Freelancers -->
-  <section class="categories-section w-full py-5 px-8">
+  <section class="freelancers-section w-full py-5 px-8">
     <div class="flex flex-col gap-y-5">
       <div class="flex flex-row justify-between w-full mb-3 items-end font-medium">
-        <h2 class="text-lg md:text-xl lg:text-3xl font-semibold w-1/2 ">Most Popular Categories</h2>
+        <div class="w-1/2">
+          <h2 class="text-xl md:text-2xl lg:text-3xl font-semibold">Expert Freelancers</h2>
+          <p class="text-sm text-gray-500">Search and contact freelancers directly with no obligation</p>
+        </div>
         <a href="#"
-          class="categoriesLink text-xs md:text-lg lg:text-xl text-blue-500 flex flex-row items-center gap-x-2 px-3 py-1 rounded-lg hover:bg-sky-50">ALL CATEGORIES
-          <span class="mt-1">
+          class="categoriesLink text-xs md:text-lg lg:text-xl text-blue-500 flex flex-row items-center md:gap-x-2 pt-1 rounded-lg hover:bg-sky-50">ALL FREELANCERS
+          <span class="">
             <svg xmlns="http://www.w3.org/2000/svg" width="15" height="12" viewBox="0 0 12 10" fill="none">
               <path
                 d="M7.388 0.528666L11.388 4.52867C11.5086 4.64931 11.5832 4.81595 11.5832 4.99999C11.5832 5.18404 11.5086 5.3507 11.388 5.47132L7.388 9.47132C7.26823 9.5871 7.10487 9.65846 6.92486 9.65846C6.55667 9.65846 6.25819 9.35998 6.25819 8.99179C6.25819 8.81178 6.32955 8.64842 6.44552 8.52846L9.30666 5.66665H1.58333C1.21514 5.66665 0.916656 5.36817 0.916656 4.99998C0.916656 4.63179 1.21514 4.33331 1.58333 4.33331H9.30666L6.44533 1.47131C6.31977 1.34992 6.2418 1.17995 6.2418 0.991776C6.2418 0.623588 6.54028 0.325104 6.90847 0.325104C7.09664 0.325104 7.26678 0.403276 7.388 0.528666Z"
@@ -564,130 +567,10 @@
         </a>
       </div>
 
-      <div class="carousal h-72">
-        <ul class="h-full flex flex-row text-gray-50 overflow-hidden">
+      <div class="carousal h-full">
+        <ul class="flex flex-row text-gray-50 overflow-hidden h-96">
           <li
-            class="bg-no-repeat carousel-card cursor-pointer mr-3 w-3/4 md:w-2/5 lg:w-1/6 shrink-0 rounded-lg overflow-hidden">
-            <div class="w-full h-full p-5">
-              <a href="#" class="h-fit">
-                <p class="text-md"></p>
-                <h3 class="text-lg font-bold"></h3>
-              </a>
-            </div>
-          </li>
-
-          <li
-            class="bg-no-repeat carousel-card cursor-pointer mr-3 w-3/4 md:w-2/5 lg:w-1/6 shrink-0 rounded-lg overflow-hidden">
-            <div class="w-full h-full p-5">
-              <a href="#" class="h-fit">
-                <p class="text-md"></p>
-                <h3 class="text-lg font-bold"></h3>
-              </a>
-            </div>
-          </li>
-
-          <li
-            class="bg-no-repeat carousel-card cursor-pointer mr-3 w-3/4 md:w-2/5 lg:w-1/6 shrink-0 rounded-lg overflow-hidden">
-            <div class="w-full h-full p-5">
-              <a href="#" class="h-fit">
-                <p class="text-md"></p>
-                <h3 class="text-lg font-bold"></h3>
-              </a>
-            </div>
-          </li>
-
-          <li
-            class="bg-no-repeat carousel-card cursor-pointer mr-3 w-3/4 md:w-2/5 lg:w-1/6 shrink-0 rounded-lg overflow-hidden">
-            <div class="w-full h-full p-5">
-              <a href="#" class="h-fit">
-                <p class="text-md"></p>
-                <h3 class="text-lg font-bold"></h3>
-              </a>
-            </div>
-          </li>
-
-          <li
-            class="bg-no-repeat carousel-card cursor-pointer mr-3 w-3/4 md:w-2/5 lg:w-1/6 shrink-0 rounded-lg overflow-hidden">
-            <div class="w-full h-full p-5">
-              <a href="#" class="h-fit">
-                <p class="text-md"></p>
-                <h3 class="text-lg font-bold"></h3>
-              </a>
-            </div>
-          </li>
-
-          <li
-            class="bg-no-repeat carousel-card cursor-pointer mr-3 w-3/4 md:w-2/5 lg:w-1/6 shrink-0 rounded-lg overflow-hidden">
-            <div class="w-full h-full p-5">
-              <a href="#" class="h-fit">
-                <p class="text-md"></p>
-                <h3 class="text-lg font-bold"></h3>
-              </a>
-            </div>
-          </li>
-
-          <li
-            class="bg-no-repeat carousel-card cursor-pointer mr-3 w-3/4 md:w-2/5 lg:w-1/6 shrink-0 rounded-lg overflow-hidden">
-            <div class="w-full h-full p-5">
-              <a href="#" class="h-fit">
-                <p class="text-md"></p>
-                <h3 class="text-lg font-bold"></h3>
-              </a>
-            </div>
-          </li>
-
-          <li
-            class="bg-no-repeat carousel-card cursor-pointer mr-3 w-3/4 md:w-2/5 lg:w-1/6 shrink-0 rounded-lg overflow-hidden">
-            <div class="w-full h-full p-5">
-              <a href="#" class="h-fit">
-                <p class="text-md"></p>
-                <h3 class="text-lg font-bold"></h3>
-              </a>
-            </div>
-          </li>
-
-          <li
-            class="bg-no-repeat carousel-card cursor-pointer mr-3 w-3/4 md:w-2/5 lg:w-1/6 shrink-0 rounded-lg overflow-hidden">
-            <div class="w-full h-full p-5">
-              <a href="#" class="h-fit">
-                <p class="text-md"></p>
-                <h3 class="text-lg font-bold"></h3>
-              </a>
-            </div>
-          </li>
-
-          <li
-            class="bg-no-repeat carousel-card cursor-pointer mr-3 w-3/4 md:w-2/5 lg:w-1/6 shrink-0 rounded-lg overflow-hidden">
-            <div class="w-full h-full p-5">
-              <a href="#" class="h-fit">
-                <p class="text-md"></p>
-                <h3 class="text-lg font-bold"></h3>
-              </a>
-            </div>
-          </li>
-
-          <li
-            class="bg-no-repeat carousel-card cursor-pointer mr-3 w-3/4 md:w-2/5 lg:w-1/6 shrink-0 rounded-lg overflow-hidden">
-            <div class="w-full h-full p-5">
-              <a href="#" class="h-fit">
-                <p class="text-md"></p>
-                <h3 class="text-lg font-bold"></h3>
-              </a>
-            </div>
-          </li>
-
-          <li
-            class="bg-no-repeat carousel-card cursor-pointer mr-3 w-3/4 md:w-2/5 lg:w-1/6 shrink-0 rounded-lg overflow-hidden">
-            <div class="w-full h-full p-5">
-              <a href="#" class="h-fit">
-                <p class="text-md"></p>
-                <h3 class="text-lg font-bold"></h3>
-              </a>
-            </div>
-          </li>
-
-          <li
-            class="bg-no-repeat carousel-card cursor-pointer mr-3 w-3/4 md:w-2/5 lg:w-1/6 shrink-0 rounded-lg overflow-hidden">
+            class="bg-white mx-2 drop-shadow-xl bg-no-repeat carousel-card cursor-pointer mr-3 w-3/4 md:w-2/5 lg:w-1/6 shrink-0 rounded-lg overflow-hidden">
             <div class="w-full h-full p-5">
               <a href="#" class="h-fit">
                 <p class="text-md"></p>
@@ -701,14 +584,14 @@
 
       <div class="flex flex-row justify-center">
         <div class="">
-          <button class="p-2 md:p-3 border-2 border-r border-gray-300 m-0">
+          <button class="scrollleft p-2 md:p-3 border-2 border-r border-gray-300 m-0 disabled:border-gray-100 hover:bg-gray-100 disabled:hover:bg-white" disabled>
             <svg class="rotate-180" xmlns="http://www.w3.org/2000/svg" width="15" height="12" viewBox="0 0 12 10" fill="none">
               <path
                 d="M7.388 0.528666L11.388 4.52867C11.5086 4.64931 11.5832 4.81595 11.5832 4.99999C11.5832 5.18404 11.5086 5.3507 11.388 5.47132L7.388 9.47132C7.26823 9.5871 7.10487 9.65846 6.92486 9.65846C6.55667 9.65846 6.25819 9.35998 6.25819 8.99179C6.25819 8.81178 6.32955 8.64842 6.44552 8.52846L9.30666 5.66665H1.58333C1.21514 5.66665 0.916656 5.36817 0.916656 4.99998C0.916656 4.63179 1.21514 4.33331 1.58333 4.33331H9.30666L6.44533 1.47131C6.31977 1.34992 6.2418 1.17995 6.2418 0.991776C6.2418 0.623588 6.54028 0.325104 6.90847 0.325104C7.09664 0.325104 7.26678 0.403276 7.388 0.528666Z"
                 fill="#5B6678" />
             </svg>
           </button>
-          <button class="p-2 md:p-3 border-2 border-l border-gray-300 m-0">
+          <button class="scrollRight p-2 md:p-3 border-2 border-l border-gray-300 m-0 hover:bg-gray-100 disabled:hover:bg-white">
             <svg xmlns="http://www.w3.org/2000/svg" width="15" height="12" viewBox="0 0 12 10" fill="none">
               <path
                 d="M7.388 0.528666L11.388 4.52867C11.5086 4.64931 11.5832 4.81595 11.5832 4.99999C11.5832 5.18404 11.5086 5.3507 11.388 5.47132L7.388 9.47132C7.26823 9.5871 7.10487 9.65846 6.92486 9.65846C6.55667 9.65846 6.25819 9.35998 6.25819 8.99179C6.25819 8.81178 6.32955 8.64842 6.44552 8.52846L9.30666 5.66665H1.58333C1.21514 5.66665 0.916656 5.36817 0.916656 4.99998C0.916656 4.63179 1.21514 4.33331 1.58333 4.33331H9.30666L6.44533 1.47131C6.31977 1.34992 6.2418 1.17995 6.2418 0.991776C6.2418 0.623588 6.54028 0.325104 6.90847 0.325104C7.09664 0.325104 7.26678 0.403276 7.388 0.528666Z"
