@@ -3,6 +3,4 @@ $( document ).ready(function() {
     $("#navbar").slideToggle(500);
    })
    
-
-
 });
