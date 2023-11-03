@@ -26,3 +26,30 @@ btn_messagInbox.forEach((button, i) => {
       
     });
   });
+
+
+  const replay_mssg =document.querySelectorAll(".btn_open_model_replay_inbox");
+  replay_mssg.forEach((button, i) => {
+    button.addEventListener('click', () => {
+      
+      
+    });
+  });
+
+
+  const  modalopen = document.querySelector("#dailog_replay");
+  const  btn_opn_modal =document.querySelectorAll(".btn_open_model_replay_inbox")
+  const email_user=document.querySelectorAll(".email_user")
+  const  email_modal=document.querySelector("#email_inbx")
+  btn_opn_modal.forEach((button, i) => {
+    button.addEventListener('click', () => {
+      email_modal.textContent=email_user[i].textContent;
+      modalopen.showModal();
+      
+    });
+  });
+  const btn_cls_btn = document.querySelector("#clse_btn")
+   
+  btn_cls_btn.addEventListener('click', () => {
+      modalopen.close();
+    });
