@@ -16,17 +16,4 @@ $(document).ready(function () {
     }
     test_nav_status();
 
-    /* Sections navbar */
-    $("#sectionsNavbar button").click(() => {
-        $("#sectionsNavbar").toggleClass("-translate-x-full");
-        $("#sectionsNavbar button svg").toggleClass("rotate-90");
-        $(".scrollDownToSection").click((e) => {
-            $("#sectionsNavbar button svg").toggleClass("rotate-90");
-            $('#sectionsNavbar').addClass('-translate-x-full');
-        });
-    })
-
-
-    /* Categories section */
-
 });
