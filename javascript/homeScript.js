@@ -7,7 +7,7 @@ let title = document.querySelector(".title-font");
 let slidesColors = ["custom-green-", "amber-400", "purple-900", "indigo-950", "red-800"];
 
 
-/* Sections navbar */
+// Sections navbar
 $("#sectionsNavbar button").click(() => {
     $("#sectionsNavbar").toggleClass("-translate-x-full");
     $("#sectionsNavbar button svg").toggleClass("rotate-90");
@@ -163,7 +163,7 @@ let freelancersInfos = [
         id: 2,
         imgURL: "../images/freelancers/zindihi.jpg",
         title: "Zindihi",
-        job: "Graphic Designer, Illustrator and Motion Graphic Designer and drri allah i3merha dar",
+        job: "Graphic Designer, Illustrator and he is an amazing man to work with",
         countryFlag: "../images/indiaFlag.png",
         country: "India",
         rating: 4.9,
@@ -183,7 +183,7 @@ let freelancersInfos = [
         reviews: 2973,
         specialities: ["Figma design", "laravel dev", "React developement"],
         projectsNumber: 1574,
-        price: 90
+        price: 75
     },
     {
         id: 4,
@@ -372,8 +372,8 @@ let freelancersInfos = [
         imgURL: "../images/freelancers/waheli.jpg",
         title: "waheli Namek",
         job: "SEO and digital marketing Expert. Google Certified PPC Consultant - Over 1400 projects completed",
-        countryFlag: "../images/moroccoFlag.png",
-        country: "Morocco",
+        countryFlag: "../images/amazighFlag.png",
+        country: "ⴰⵎⴰⵣⵉⵖ",
         rating: 4.9,
         reviews: 1142,
         specialities: ["link building", "google ranking", "google search"],
@@ -478,7 +478,7 @@ let makeFreelancersCards = (infos) => {
             link.textContent = speciality;
             card.querySelector('.specialities').insertBefore(link, card.querySelector(".specialities").firstChild);
         })
-        card.querySelector('.projects').textContent = infos[i].projectsNumber;
+        card.querySelector('.projects').textContent = infos[i].projectsNumber + " projects";
         card.querySelector('.price').textContent = "$" + infos[i].price;
         i++
     })

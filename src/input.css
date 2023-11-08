@@ -19,8 +19,3 @@
 .scroll-left:disabled svg path , .scroll-right:disabled svg path{
     fill: rgb(208, 206, 206);
 }
-
-/* Freelancers */
-.carousal ul::-webkit-scrollbar{
-    display: none;
-}
