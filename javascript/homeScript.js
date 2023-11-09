@@ -6,7 +6,6 @@ let searchBtn = document.querySelector(".searchBtn");
 let title = document.querySelector(".title-font");
 let slidesColors = ["custom-green-", "amber-400", "purple-900", "indigo-950", "red-800"];
 
-
 // Sections navbar
 $("#sectionsNavbar button").click(() => {
     $("#sectionsNavbar").toggleClass("-translate-x-full");
@@ -143,6 +142,7 @@ let makeCategoriesCards = (infos) => {
     })
 }
 makeCategoriesCards(categoriesInfos);
+
 
 /*** Freelancers section ***/
 let freelancersInfos = [
@@ -485,6 +485,156 @@ let makeFreelancersCards = (infos) => {
 }
 makeFreelancersCards(freelancersInfos);
 
+
+/*** Offers section ***/
+let offersInfos = [
+    {
+        id: 1,
+        imgURL: "../images/offers/offer1.png",
+        title: "Design Responsive, SEO friendly & Fast Loading WordPress website",
+        specialities: ["search engine optimization SEO", "logo design", "design"],
+        freelancerPhoto: "../images/freelancers/ayman.jpg",
+        freelancerName: "Ayman B.",
+        rating: 4.9,
+        reviews: 2723,
+        price: 205,
+        dileveredDays: 5
+    },
+    {
+        id: 2,
+        imgURL: "../images/offers/offer2.png",
+        title: "Design Responsive, SEO friendly & Fast Loading WordPress website",
+        specialities: ["search engine optimization SEO", "logo design", "design"],
+        freelancerPhoto: "../images/sliders/slide4/cardAbdelghani.jpg",
+        freelancerName: "Abdelghani A.",
+        rating: 4.9,
+        reviews: 1723,
+        price: 500,
+        dileveredDays: 4
+    },
+    {
+        id: 3,
+        imgURL: "../images/offers/offer3.jpg",
+        title: "Design Responsive, SEO friendly & Fast Loading WordPress website",
+        specialities: ["search engine optimization SEO", "logo design", "design"],
+        freelancerPhoto: "../images/freelancers/lhcen.jpg",
+        freelancerName: "Lahcen B.",
+        rating: 4.9,
+        reviews: 1723,
+        price: 105,
+        dileveredDays: 5
+    },
+    {
+        id: 4,
+        imgURL: "../images/offers/offer4.jpg",
+        title: "Design Responsive, SEO friendly & Fast Loading WordPress website",
+        specialities: ["search engine optimization SEO", "logo design", "design"],
+        freelancerPhoto: "../images/freelancers/waheli.jpg",
+        freelancerName: "Waheli B.",
+        rating: 4.9,
+        reviews: 1723,
+        price: 105,
+        dileveredDays: 5
+    },
+    {
+        id: 5,
+        imgURL: "../images/offers/offer5.jpg",
+        title: "Design Responsive, SEO friendly & Fast Loading WordPress website",
+        specialities: ["search engine optimization SEO", "logo design", "design"],
+        freelancerPhoto: "../images/freelancers/zehra.jpg",
+        freelancerName: "Zehra El.",
+        rating: 4.9,
+        reviews: 1723,
+        price: 105,
+        dileveredDays: 5
+    },
+    {
+        id: 6,
+        imgURL: "../images/offers/offer6.jpg",
+        title: "Design Responsive, SEO friendly & Fast Loading WordPress website",
+        specialities: ["search engine optimization SEO", "logo design", "design"],
+        freelancerPhoto: "../images/freelancers/zaid.jpg",
+        freelancerName: "Zaid B.",
+        rating: 4.9,
+        reviews: 1723,
+        price: 105,
+        dileveredDays: 5
+    },
+    {
+        id: 7,
+        imgURL: "../images/offers/offer7.jpg",
+        title: "Design Responsive, SEO friendly & Fast Loading WordPress website",
+        specialities: ["search engine optimization SEO", "logo design", "design"],
+        freelancerPhoto: "../images/freelancers/yassin.jpg",
+        freelancerName: "Yassin B.",
+        rating: 4.9,
+        reviews: 1723,
+        price: 105,
+        dileveredDays: 5
+    },
+    {
+        id: 8,
+        imgURL: "../images/offers/offer8.jpg",
+        title: "Design Responsive, SEO friendly & Fast Loading WordPress website",
+        specialities: ["search engine optimization SEO", "logo design", "design"],
+        freelancerPhoto: "../images/freelancers/wissal.jpg",
+        freelancerName: "Wissal B.",
+        rating: 4.9,
+        reviews: 1723,
+        price: 105,
+        dileveredDays: 5
+    },
+    {
+        id: 9,
+        imgURL: "../images/offers/offer9.jpg",
+        title: "Design Responsive, SEO friendly & Fast Loading WordPress website",
+        specialities: ["search engine optimization SEO", "logo design", "design"],
+        freelancerPhoto: "../images/freelancers/zindihi.jpg",
+        freelancerName: "Zindihi B.",
+        rating: 4.9,
+        reviews: 1723,
+        price: 105,
+        dileveredDays: 5
+    },
+    {
+        id: 10,
+        imgURL: "../images/offers/offer10.jpg",
+        title: "Design Responsive, SEO friendly & Fast Loading WordPress website",
+        specialities: ["search engine optimization SEO", "logo design", "design"],
+        freelancerPhoto: "../images/freelancers/ghofran.jpg",
+        freelancerName: "Mohamed G.",
+        rating: 4.9,
+        reviews: 1723,
+        price: 105,
+        dileveredDays: 5
+    },
+]
+let offersCards = document.querySelectorAll(".offers-section .offer-card");
+
+let makeOffersCards = (infos) => {
+    let i=0;
+    offersCards.forEach(card => {
+        card.querySelector(".title").textContent = infos[i].title;
+        card.querySelector(".photo").style.backgroundImage = `url("${infos[i].imgURL}")`;
+        infos[i].specialities.forEach(speciality => {
+            let link = document.createElement('a');
+            link.setAttribute("class", "px-1.5 py-1 m-0.5 text-sm text-gray-600 bg-gray-100 rounded-md");
+            link.setAttribute('href', "#");
+            link.textContent = speciality;
+            card.querySelector('.specialities').insertBefore(link, card.querySelector(".specialities").firstChild);
+        })
+        card.querySelector(".freelancer-photo").setAttribute("src", infos[i].freelancerPhoto);
+        card.querySelector(".freelancer-name").textContent = infos[i].freelancerName;
+        card.querySelector(".rating").textContent = infos[i].rating;
+        card.querySelector(".reviews").textContent = infos[i].reviews;
+        card.querySelector(".price").textContent = `$${infos[i].price}`;
+        card.querySelector(".dilevered-days").textContent = `dilevered in ${infos[i].dileveredDays} days`;
+        i++;
+    })
+}
+makeOffersCards(offersInfos);
+
+
 $(document).ready(() => {
     // Categories section
 
@@ -550,7 +700,32 @@ $(document).ready(() => {
         });
     });
 
-    
+    // Offers section
+    let offersScrollStep;
+    if (window.innerWidth > 1023) {
+        offersScrollStep = 336;
+    } else if (window.innerWidth > 767) {
+        offersScrollStep = ($(".offers-section .carousal ul")[0].offsetWidth / 5) * 4 + 32;
+    } else {
+        offersScrollStep = ($(".offers-section .carousal ul")[0].offsetWidth / 5) * 4 + 16;
+    }
+
+    $(".offers-btns .scroll-left").click(() => {
+        $(".offers-section .carousal ul").animate({
+            scrollLeft: `+=${offersScrollStep}`
+        }, 700, () => {
+            let maxScrollLeft = $(".offers-section .carousal ul")[0].scrollWidth - $(".offers-section .carousal ul").width();
+            $(".offers-section .carousal ul").scrollLeft() >= maxScrollLeft - 5 ? $(".offers-btns .scroll-left").prop("disabled", true) : $(".offers-btns .scroll-right").prop("disabled", false)
+        });
+    });
+
+    $(".offers-btns .scroll-right").click(() => {
+        $(".offers-section .carousal ul").animate({
+            scrollLeft: `-=${offersScrollStep}`
+        }, 700, () => {
+            $(".offers-section .carousal ul").scrollLeft() <= 5 ? $(".offers-btns .scroll-right").prop("disabled", true) : $(".offers-btns .scroll-left").prop("disabled", false)
+        });
+    });
 
 
 })

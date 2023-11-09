@@ -8,7 +8,7 @@
     border-bottom: 2px solid gray;
 }
 
-.categories-section .category-card:hover a h3 {
+.categories-section .category-card:hover a h3, .freelancers-section .freelancer-card:hover .title, .offers-section .offer-card:hover .title {
     text-decoration: underline;
 }
 
@@ -18,4 +18,8 @@
 
 .scroll-left:disabled svg path , .scroll-right:disabled svg path{
     fill: rgb(208, 206, 206);
+}
+
+.freelancer-card:hover, .offer-card:hover{
+    transform: translateY(-2px);
 }
