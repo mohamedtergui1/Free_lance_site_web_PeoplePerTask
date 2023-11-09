@@ -130,8 +130,12 @@
       <div class="w-full px-12 py-10 ">
         <h1 class="text-7xl font-sans ">About us</h1>
         <p class="text-lg font-sans py-8 xl:text-2xl ">Lorem ipsum dolor sit amet consectetur adipisicing elit. Itaque ut similique, libero, ad impedit porro perferendis quasi nemo eum placeat iusto repellendus beatae quis quia minus officiis, blanditiis sapiente</p>
-        <button class="bg-custom-green rounded-md p-4 pl-12 pr-12 ">Read More</button>
+        <button onclick="openModal()" class=" bg-custom-green rounded-md p-4 pl-12 pr-12 ">Read More</button>
       </div>
+      <div id="modal_content" class=" hidden fixed top-0 left-0 w-full h-full backdrop-filter-blur-gray justify-center  ">
+        <span onclick="closeModal()">&times;</span>
+        <p class="bg-white p-16 rounded-lg m-24" >Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni ipsa ad iure. Inventore repellat repellendus velit magni sit laboriosam beatae? Aut, nemo? Deleniti, dolor id reprehenderit tempore itaque iure nam.</p>
+    </div>
       <div class=" mt-16 pr-10 pb-24">
         <img src="../images/about.svg" alt="image des collaborateurs" >
       </div>

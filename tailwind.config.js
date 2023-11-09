@@ -6,6 +6,9 @@ module.exports = {
       colors: {
         'custom-green': '#00FF0A',
       },
+      backdropFilter: { 
+        'blur-gray': 'blur(5px) grayscale(0.5)',
+      },
     },
   },
   plugins: [],
