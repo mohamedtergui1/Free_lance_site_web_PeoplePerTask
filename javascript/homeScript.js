@@ -10,7 +10,7 @@ let slidesColors = ["custom-green-", "amber-400", "purple-900", "indigo-950", "r
 $("#sectionsNavbar button").click(() => {
     $("#sectionsNavbar").toggleClass("-translate-x-full");
     $("#sectionsNavbar button svg").toggleClass("rotate-90");
-    $(".scrollDownToSection").click((e) => {
+    $(".scrollDownToSection").click(() => {
         $("#sectionsNavbar button svg").toggleClass("rotate-90");
         $('#sectionsNavbar').addClass('-translate-x-full');
     });
@@ -703,7 +703,7 @@ $(document).ready(() => {
     // Offers section
     let offersScrollStep;
     if (window.innerWidth > 1023) {
-        offersScrollStep = 336;
+        offersScrollStep = 912;
     } else if (window.innerWidth > 767) {
         offersScrollStep = ($(".offers-section .carousal ul")[0].offsetWidth / 5) * 4 + 32;
     } else {
