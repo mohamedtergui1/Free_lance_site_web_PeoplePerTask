@@ -4,8 +4,5 @@
   },
   "scripts": {
     "dev": "tailwindcss -i ./src/input.css -o ./dist/output.css --watch"
-  },
-  "dependencies": {
-    "swiper": "^11.0.4"
   }
 }
