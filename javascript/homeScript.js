@@ -13,8 +13,9 @@ $("#sectionsNavbar button").click(() => {
 let slides = Array.from(document.querySelectorAll(".slide"));
 let slidesBtns = Array.from(document.querySelectorAll(".slideBtn"));
 let searchBtn = document.querySelector(".searchBtn");
+let searchInput = document.querySelector(".search-input");
 let title = document.querySelector(".title-font");
-let slidesColors = ["custom-green-", "amber-400", "purple-600", "indigo-950", "red-800"];
+let slidesColors = ["custom-green-", "amber-400", "fuchsia-700", "violet-900", "red-800"];
 
 // auto Slide
 let slide = () => {
@@ -29,6 +30,7 @@ let slide = () => {
                 slidesBtns[nextSlideIndex].classList.replace("bg-gray-300", `bg-${slidesColors[nextSlideIndex]}`);
                 title.classList.replace(`text-${slidesColors[i]}`, `text-${slidesColors[nextSlideIndex]}`);
                 searchBtn.classList.replace(`bg-${slidesColors[i]}`, `bg-${slidesColors[nextSlideIndex]}`);
+                searchInput.classList.replace(`border-${slidesColors[i]}`, `border-${slidesColors[nextSlideIndex]}`);
                 break;
             }
         }
@@ -473,7 +475,7 @@ let makeFreelancersCards = (infos) => {
         card.querySelector('.reviews').textContent = infos[i].reviews;
         infos[i].specialities.forEach(speciality => {
             let link = document.createElement('a');
-            link.setAttribute("class", "px-1.5 py-1 m-0.5 text-sm text-gray-600 bg-gray-100 rounded-md");
+            link.setAttribute("class", "px-1.5 py-1 m-0.5 text-sm bg-gray-100 rounded-md");
             link.setAttribute('href', "#");
             link.textContent = speciality;
             card.querySelector('.specialities').insertBefore(link, card.querySelector(".specialities").firstChild);
@@ -618,7 +620,7 @@ let makeOffersCards = (infos) => {
         card.querySelector(".photo").style.backgroundImage = `url("${infos[i].imgURL}")`;
         infos[i].specialities.forEach(speciality => {
             let link = document.createElement('a');
-            link.setAttribute("class", "px-1.5 py-1 m-0.5 text-sm text-gray-600 bg-gray-100 rounded-md");
+            link.setAttribute("class", "px-1.5 py-1 m-0.5 text-sm bg-gray-100 rounded-md");
             link.setAttribute('href', "#");
             link.textContent = speciality;
             card.querySelector('.specialities').insertBefore(link, card.querySelector(".specialities").firstChild);
@@ -726,8 +728,6 @@ $(document).ready(() => {
             $(".offers-section .carousal ul").scrollLeft() <= 5 ? $(".offers-btns .scroll-right").prop("disabled", true) : $(".offers-btns .scroll-left").prop("disabled", false)
         });
     });
-
-
 })
 
 var swiper = new Swiper(".mySwiper", {

@@ -23,3 +23,30 @@
 .freelancer-card:hover, .offer-card:hover{
     transform: translateY(-2px);
 }
+
+.companies-section img{
+    mix-blend-mode: color-burn;
+}
+
+footer{
+    background-color: #18202B;
+}
+
+/* Dark mode */
+.dark .specialities a{
+    background-color: rgb(83, 91, 91);
+}
+
+.dark .companies-section svg :last-child{
+    fill: white;
+}
+
+.lightmodeBtn:hover path{
+    fill: white;
+    transform: scale(1.05);
+}
+
+.darkmodeBtn:hover path{
+    fill: black;
+    transform: scale(1.05);
+}
