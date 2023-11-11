@@ -23,6 +23,7 @@ $(document).ready(function () {
 
     $(".lightmodeBtn").click(() => activeLight());
 
+    /* Mobile Navbar */
     if (window.innerWidth < 1023) {
         $("#navbar").hide(0);
     }
