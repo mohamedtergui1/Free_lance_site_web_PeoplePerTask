@@ -1,11 +1,4 @@
 
-/*** Hero section ***/
-let slides = Array.from(document.querySelectorAll(".slide"));
-let slidesBtns = Array.from(document.querySelectorAll(".slideBtn"));
-let searchBtn = document.querySelector(".searchBtn");
-let title = document.querySelector(".title-font");
-let slidesColors = ["custom-green-", "amber-400", "purple-900", "indigo-950", "red-800"];
-
 // Sections navbar
 $("#sectionsNavbar button").click(() => {
     $("#sectionsNavbar").toggleClass("-translate-x-full");
@@ -15,6 +8,13 @@ $("#sectionsNavbar button").click(() => {
         $('#sectionsNavbar').addClass('-translate-x-full');
     });
 })
+
+/*** Hero section ***/
+let slides = Array.from(document.querySelectorAll(".slide"));
+let slidesBtns = Array.from(document.querySelectorAll(".slideBtn"));
+let searchBtn = document.querySelector(".searchBtn");
+let title = document.querySelector(".title-font");
+let slidesColors = ["custom-green-", "amber-400", "purple-600", "indigo-950", "red-800"];
 
 // auto Slide
 let slide = () => {

@@ -1,5 +1,5 @@
 <!doctype html>
-<html class="scroll-smooth">
+<html class="scroll-smooth dark">
 
 <head>
   <meta charset="UTF-8">
@@ -10,10 +10,10 @@
   <title>peaple per task</title>
 </head>
 
-<body class="overflow-x-hidden bg-slate-100 px-2 md:px-0">
+<body class="overflow-x-hidden bg-slate-100 dark:bg-slate-800 px-2 md:px-0">
 
   <!-- Header -->
-  <header class="flex bg-gray-50 justify-between p-2 md:py-3 md:px-8 lg:px-10">
+  <header class="flex bg-gray-50 justify-between p-2 md:py-3 md:px-8 lg:px-10 dark:bg-slate-700">
     <div class="flex">
       <span class="bg-custom-green rounded-full p-2">
         <svg width="47" height="47" viewBox="0 0 47 43" fill="none" xmlns="http://www.w3.org/2000/svg"
@@ -28,25 +28,25 @@
           </defs>
         </svg>
       </span>
-      <span class="text-custom-green text-2xl font-bold self-center ">People<span class="text-black">Per</span>Task
+      <span class="text-custom-green text-2xl font-bold self-center ">People<span class="text-gray-500">Per</span>Task
       </span>
     </div>
     <nav id="navbar"
-      class="z-50 lg:items-center self-center flex flex-col  gap-32 lg:flex-row lg:p-0  px-2 pb-8 w-3/6 sm:w-1/3 lg:static absolute lg:bg-transparent bg-gray-50 -col top-16 right-0  lg:w-9/12  lg:justify-end ">
-      <ul class=" flex  flex-col lg:flex-row  lg:gap-8  gap-5 self-center text-1xl font-bold text-gray-700 lg:w-auto w-5/6">
-        <li class="text-gray-600 lg:pt-0 pt-4 border-b-2 border-gray-600">
+      class="z-50 lg:items-center self-center flex flex-col gap-32 lg:flex-row lg:p-0  px-2 pb-8 w-3/6 sm:w-1/3 lg:static absolute lg:bg-transparent bg-gray-50 top-16 right-0  lg:w-9/12  lg:justify-end dark:bg-slate-700 ">
+      <ul class="flex flex-col lg:flex-row lg:gap-8 gap-5 self-center text-1xl font-bold text-gray-700 lg:w-auto w-5/6">
+        <li class="text-gray-600 dark:text-gray-300 lg:pt-0 pt-4 md:border-b-2 border-gray-600 dark:border-gray-400">
           <a href="/">Home</a>
         </li>
 
-        <li class="text-gray-600 border-t-2 lg:border-0 lg:pt-0 pt-4">
+        <li class="text-gray-600 dark:text-gray-300 border-t-2 lg:border-0 lg:pt-0 pt-4">
           <a href="./about.html">About Us</a>
         </li>
 
-        <li class="text-gray-600 border-t-2 lg:border-0 lg:pt-0 pt-4">
+        <li class="text-gray-600 dark:text-gray-300 border-t-2 lg:border-0 lg:pt-0 pt-4">
           <a href="./contact.html">Contact Us</a>
         </li>
 
-        <li class="text-gray-600 border-t-2 lg:border-0 lg:pt-0 pt-4">
+        <li class="text-gray-600 dark:text-gray-300 border-t-2 lg:border-0 lg:pt-0 pt-4">
           <a href="./search.html" class="flex">
             <svg class="pt-1" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
               <path
@@ -65,7 +65,7 @@
             Log in
           </span>
         </a>
-        <a href="./sign_in.html" class="bg-custom-green rounded-md px-3 text-center text-white">
+        <a href="./sign_in.html" class="bg-custom-green rounded-md px-3 text-center text-white font-semibold">
           <span>
             Register
           </span>
@@ -83,11 +83,11 @@
   <!-- end Header -->
 
   <!-- Hero section -->
-  <section class="hero-section body-font relative  p-2 md:py-3 md:px-8 lg:px-10">
+  <section class="hero-section body-font relative p-2 md:py-3 md:px-8 lg:px-10">
     <!-- Sections Navbar -->
     <div id="sectionsNavbar"
       class="absolute w-2/3 md:w-1/2 lg:w-1/4 transition-all z-50 duration-500 -translate-x-full md:-ml-5 lg:-ml-8">
-      <button class="rotate-90 absolute right-0 -mr-11 bg-slate-100 p-3 drop-shadow-lg rounded-md">
+      <button class="rotate-90 absolute right-0 -mr-11 bg-slate-100 dark:bg-slate-700 p-3 drop-shadow-lg rounded-md">
         <svg class="text-center" xmlns="http://www.w3.org/2000/svg" width="10" height="15" viewBox="0 0 10 15"
           fill="none">
           <path class="self-center" fill-rule="evenodd" clip-rule="evenodd"
@@ -95,10 +95,10 @@
             fill="#05DB0E" />
         </svg>
       </button>
-      <ul class="flex flex-col rounded-xl shadow-custom-green drop-shadow-xl bg-slate-100 bg-opacity-95 p-3">
+      <ul class="flex flex-col rounded-xl shadow-custom-green drop-shadow-xl bg-slate-100 bg-opacity-95 dark:bg-slate-700 dark:text-gray-200 p-3">
         <li class="scrollDownToSection">
           <a href="#categories"
-            class="flex flex-row justify-between items-center py-2 hover:bg-slate-200 hover:bg-opacity-40">
+            class="flex flex-row justify-between items-center py-2 hover:bg-slate-200 dark:hover:bg-slate-600 hover:bg-opacity-40">
             <p class="mr-auto text-sm md:text-lg font-semibold">Most Pupular Categories</p>
             <span>
               <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 9 9" fill="none">
@@ -118,7 +118,7 @@
 
         <li class="scrollDownToSection">
           <a href="#freelancers"
-            class="flex flex-row justify-between items-center py-2 hover:bg-slate-200 hover:bg-opacity-40">
+            class="flex flex-row justify-between items-center py-2 hover:bg-slate-200 dark:hover:bg-slate-600 hover:bg-opacity-40">
             <p class="mr-auto text-sm md:text-lg font-semibold">Most Pupular Freelancers</p>
             <span>
               <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 9 9" fill="none">
@@ -138,7 +138,7 @@
 
         <li class="scrollDownToSection">
           <a href="#offers"
-            class="flex flex-row justify-between items-center py-2 hover:bg-slate-200 hover:bg-opacity-40">
+            class="flex flex-row justify-between items-center py-2 hover:bg-slate-200 dark:hover:bg-slate-600 hover:bg-opacity-40">
             <p class="mr-auto text-sm md:text-lg font-semibold">Trending Offres</p>
             <span>
               <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 9 9" fill="none">
@@ -157,7 +157,7 @@
         <hr class="border-b-custom-green border">
 
         <li class="scrollDownToSection">
-          <a href="#testimonials" class="flex flex-row justify-between items-center py-2 hover:bg-slate-200 hover:bg-opacity-40">
+          <a href="#testimonials" class="flex flex-row justify-between items-center py-2 hover:bg-slate-200 dark:hover:bg-slate-600 hover:bg-opacity-40">
             <p class="mr-auto text-sm md:text-lg font-semibold">Testimonials</p>
             <span>
               <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 9 9" fill="none">
@@ -183,12 +183,12 @@
       <div class=" md:w-1/2 flex flex-col md:items-start md:text-left items-center text-center py-12">
         <p class="title-font text-5xl md:text-6xl mb-6 font-medium lg:w-4/5 text-custom-green-">Make bright
           ideas happen</p>
-        <p class="mb-8 leading-relaxed text-lg lg:w-4/6">Access global talent on the freelancer website trusted
+        <p class="mb-8 leading-relaxed text-lg lg:w-4/6 dark:text-gray-300">Access global talent on the freelancer website trusted
           by over 1 million businesses worldwide.</p>
         <form class="flex w-full md:justify-start justify-center items-end">
           <div class="relative w-2/3 md:w-full lg:w-full xl:w-2/3 p-0">
             <input type="text" id="hero-field" name="hero-field" placeholder="Try 'web development' "
-              class="h-14 w-full drop-shadow-md bg-white rounded-l-lg border bg-opacity-50 border-gray-300 focus:ring-1 focus:ring-custom-green focus:bg-transparent focus:border-custom-green text-base outline-none text-gray-500 py-2 px-6 leading-8 transition-colors duration-200 ease-in-out">
+              class="h-14 w-full drop-shadow-md bg-white rounded-l-lg border bg-opacity-50 border-gray-300 focus:ring-custom-green focus:bg-transparent focus:border-custom-green dark:bg-transparent text-base outline-none text-gray-500 py-2 px-6 leading-8 transition-colors duration-200 ease-in-out">
           </div>
           <button
             class="searchBtn h-14 w-1/8 inline-flex text-white bg-custom-green- border-0 py-2 px-6 focus:outline-none hover:opacity-90 rounded-r-lg text-lg items-center">
@@ -200,14 +200,14 @@
           </button>
         </form>
         <div class="flex flex-row flex-wrap my-4 w-4/5 ">
-          <span class="text-xs self-center text-gray-500 mr-2">Popular skills:</span>
-          <a href="#" class="px-1.5 py-1 m-0.5 text-xs text-gray-600 bg-gray-100 rounded-sm">web
+          <span class="text-xs self-center text-gray-400 mr-2">Popular skills:</span>
+          <a href="#" class="px-1.5 py-1 m-0.5 text-xs text-gray-600 bg-gray-100 rounded-sm dark:bg-slate-600 dark:text-gray-300">web
             design</a>
-          <a href="#" class="px-1.5 py-1 m-0.5 text-xs text-gray-600 bg-gray-100 rounded-sm">ux/ui
+          <a href="#" class="px-1.5 py-1 m-0.5 text-xs text-gray-600 bg-gray-100 rounded-sm dark:bg-slate-600 dark:text-gray-300">ux/ui
             design</a>
-          <a href="#" class="px-1.5 py-1 m-0.5 text-xs text-gray-600 bg-gray-100 rounded-sm">android
+          <a href="#" class="px-1.5 py-1 m-0.5 text-xs text-gray-600 bg-gray-100 rounded-sm dark:bg-slate-600 dark:text-gray-300">android
             app development</a>
-          <a href="#" class="px-1.5 py-1 m-0.5 text-xs text-gray-600 bg-gray-100 rounded-sm">responsive
+          <a href="#" class="px-1.5 py-1 m-0.5 text-xs text-gray-600 bg-gray-100 rounded-sm dark:bg-slate-600 dark:text-gray-300">responsive
             design</a>
         </div>
       </div>
@@ -219,22 +219,22 @@
 
               <div class="p-0">
                 <div
-                  class="absolute bottom-0 -right-5 lg:-right-10 mb-6 bg-white bg-opacity-80 p-2 lg:p-6 w-2/5 lg:w-1/3 flex flex-col text-center items-center rounded-lg drop-shadow-lg">
+                  class="absolute bottom-0 -right-5 lg:-right-10 mb-6 bg-white bg-opacity-80 p-2 lg:p-6 w-2/5 lg:w-1/3 flex flex-col text-center items-center rounded-lg drop-shadow-lg dark:bg-slate-600">
                   <div
                     class="w-12 h-12 md:w-16 md:h-16 lg:w-20 lg:h-20 inline-flex items-center justify-center mb-2 rounded-full bg-indigo-100 text-indigo-500 flex-shrink-0">
                     <img class="object-cover rounded-full object-center" src="../images/sliders/slide1/cardNada.jpg"
                       alt="card Photo">
                   </div>
                   <div class="flex-grow">
-                    <p class="text-lg font-semibold text-center px-4 leading-4">Logo Designer</p>
-                    <p class="text-xs text-slate-600 py-2">NADA ELMAHFOUDI</p>
+                    <p class="text-lg font-semibold text-center px-4 leading-4 dark:text-slate-200">Logo Designer</p>
+                    <p class="text-xs text-slate-600 dark:text-slate-300 py-2">NADA ELMAHFOUDI</p>
                     <div class="text-xs justify-center items-center flex flex-row ">
                       <svg xmlns="http://www.w3.org/2000/svg" width="16" height="13" viewBox="0 0 16 13" fill="none">
                         <path
                           d="M7.02609 0.300781L5.28709 4.77278H0.871094L4.46209 7.50078L3.22209 12.0088L7.02609 9.45978L10.8311 12.0088L9.59109 7.50078L13.1811 4.77278H8.76609L7.02609 0.300781Z"
                           fill="#FFB331" />
                       </svg>
-                      <p class="text-gray-600"><strong>5.0 </strong>(117)</p>
+                      <p class="text-gray-600 dark:text-gray-200"><strong>5.0 </strong>(117)</p>
                     </div>
                   </div>
                 </div>
@@ -248,22 +248,22 @@
 
               <div class="p-0">
                 <div
-                  class="absolute bottom-0 -right-5 lg:-right-10 mb-6 bg-white bg-opacity-80 p-2 lg:p-6 w-2/5 lg:w-1/3 flex flex-col text-center items-center rounded-lg drop-shadow-lg">
+                  class="absolute bottom-0 -right-5 lg:-right-10 mb-6 bg-white bg-opacity-80 p-2 lg:p-6 w-2/5 lg:w-1/3 flex flex-col text-center items-center rounded-lg drop-shadow-lg dark:bg-slate-600">
                   <div
                     class="w-12 h-12 md:w-16 md:h-16 lg:w-20 lg:h-20 inline-flex items-center justify-center mb-2 rounded-full bg-indigo-100 text-indigo-500 flex-shrink-0">
                     <img class="object-cover rounded-full object-center" src="../images/sliders/slide2/cardMiessal.jpg"
                       alt="card Photo">
                   </div>
                   <div class="flex-grow">
-                    <p class="text-lg font-semibold text-center px-4 leading-4">Web Developer</p>
-                    <p class="text-xs text-slate-600 py-2">Miessal Mohamed</p>
+                    <p class="text-lg font-semibold text-center px-4 leading-4 dark:text-slate-200">Web Developer</p>
+                    <p class="text-xs text-slate-600 dark:text-slate-300 py-2">Miessal Mohamed</p>
                     <div class="text-xs justify-center items-center flex flex-row ">
                       <svg xmlns="http://www.w3.org/2000/svg" width="16" height="13" viewBox="0 0 16 13" fill="none">
                         <path
                           d="M7.02609 0.300781L5.28709 4.77278H0.871094L4.46209 7.50078L3.22209 12.0088L7.02609 9.45978L10.8311 12.0088L9.59109 7.50078L13.1811 4.77278H8.76609L7.02609 0.300781Z"
                           fill="#FFB331" />
                       </svg>
-                      <p class="text-gray-600"><strong>5.0 </strong>(121)</p>
+                      <p class="text-gray-600 dark:text-gray-200"><strong>5.0 </strong>(121)</p>
                     </div>
                   </div>
                 </div>
@@ -277,22 +277,22 @@
 
               <div class="p-0">
                 <div
-                  class="absolute bottom-0 -right-5 lg:-right-10 mb-6 bg-white bg-opacity-80 p-2 lg:p-6 w-2/5 lg:w-1/3 flex flex-col text-center items-center rounded-lg drop-shadow-lg">
+                  class="absolute bottom-0 -right-5 lg:-right-10 mb-6 bg-white bg-opacity-80 p-2 lg:p-6 w-2/5 lg:w-1/3 flex flex-col text-center items-center rounded-lg drop-shadow-lg dark:bg-slate-600">
                   <div
                     class="w-12 h-12 md:w-16 md:h-16 lg:w-20 lg:h-20 inline-flex items-center justify-center mb-2 rounded-full bg-indigo-100 text-indigo-500 flex-shrink-0">
                     <img class="object-cover rounded-full object-center" src="../images/sliders/slide3/cardYassine.jpg"
                       alt="card Photo">
                   </div>
                   <div class="flex-grow">
-                    <p class="text-lg font-semibold text-center lg:px-2 leading-4">E-commerce Expert</p>
-                    <p class="text-xs text-slate-600 py-2">Elouissi Yassine</p>
+                    <p class="text-lg font-semibold text-center lg:px-2 leading-4 dark:text-slate-200">E-commerce Expert</p>
+                    <p class="text-xs text-slate-600 dark:text-slate-300 py-2">Elouissi Yassine</p>
                     <div class="text-xs justify-center items-center flex flex-row ">
                       <svg xmlns="http://www.w3.org/2000/svg" width="16" height="13" viewBox="0 0 16 13" fill="none">
                         <path
                           d="M7.02609 0.300781L5.28709 4.77278H0.871094L4.46209 7.50078L3.22209 12.0088L7.02609 9.45978L10.8311 12.0088L9.59109 7.50078L13.1811 4.77278H8.76609L7.02609 0.300781Z"
                           fill="#FFB331" />
                       </svg>
-                      <p class="text-gray-600"><strong>5.0 </strong>(117)</p>
+                      <p class="text-gray-600 dark:text-gray-200"><strong>5.0 </strong>(117)</p>
                     </div>
                   </div>
                 </div>
@@ -307,22 +307,22 @@
 
               <div class="p-0">
                 <div
-                  class="absolute bottom-0 -right-5 lg:-right-10 mb-6 bg-white bg-opacity-80 p-2 lg:p-6 w-2/5 lg:w-1/3 flex flex-col text-center items-center rounded-lg drop-shadow-lg">
+                  class="absolute bottom-0 -right-5 lg:-right-10 mb-6 bg-white bg-opacity-80 p-2 lg:p-6 w-2/5 lg:w-1/3 flex flex-col text-center items-center rounded-lg drop-shadow-lg dark:bg-slate-600">
                   <div
                     class="w-12 h-12 md:w-16 md:h-16 lg:w-20 lg:h-20 inline-flex items-center justify-center mb-2 rounded-full bg-indigo-100 text-indigo-500 flex-shrink-0">
                     <img class="object-cover rounded-full object-center"
                       src="../images/sliders/slide4/cardAbdelghani.jpg" alt="card Photo">
                   </div>
                   <div class="flex-grow">
-                    <p class="text-lg font-semibold text-center px-4 leading-4">Graphic Designer</p>
-                    <p class="text-xs text-slate-600 py-2">Ait Abdelghani</p>
+                    <p class="text-lg font-semibold text-center px-4 leading-4 dark:text-slate-200">Graphic Designer</p>
+                    <p class="text-xs text-slate-600 dark:text-slate-300 py-2">Ait Abdelghani</p>
                     <div class="text-xs justify-center items-center flex flex-row ">
                       <svg xmlns="http://www.w3.org/2000/svg" width="16" height="13" viewBox="0 0 16 13" fill="none">
                         <path
                           d="M7.02609 0.300781L5.28709 4.77278H0.871094L4.46209 7.50078L3.22209 12.0088L7.02609 9.45978L10.8311 12.0088L9.59109 7.50078L13.1811 4.77278H8.76609L7.02609 0.300781Z"
                           fill="#FFB331" />
                       </svg>
-                      <p class="text-gray-600"><strong>5.0 </strong>(117)</p>
+                      <p class="text-gray-600 dark:text-gray-200"><strong>5.0 </strong>(117)</p>
                     </div>
                   </div>
                 </div>
@@ -336,22 +336,22 @@
 
               <div class="p-0">
                 <div
-                  class="absolute bottom-0 -right-5 lg:-right-10 mb-6 bg-white bg-opacity-80 p-2 lg:p-6 w-2/5 lg:w-1/3 flex flex-col text-center items-center rounded-lg drop-shadow-lg">
+                  class="absolute bottom-0 -right-5 lg:-right-10 mb-6 bg-white bg-opacity-80 p-2 lg:p-6 w-2/5 lg:w-1/3 flex flex-col text-center items-center rounded-lg drop-shadow-lg dark:bg-slate-600">
                   <div
                     class="w-12 h-12 md:w-16 md:h-16 lg:w-20 lg:h-20 inline-flex items-center justify-center mb-2 rounded-full bg-indigo-100 text-indigo-500 flex-shrink-0">
                     <img class="object-cover rounded-full object-center" src="../images/sliders/slide5/cardTergui.jpg"
                       alt="card Photo">
                   </div>
                   <div class="flex-grow">
-                    <p class="text-lg font-semibold text-center px-4 leading-4">Interfac Designer</p>
-                    <p class="text-xs text-slate-600 py-2">Tergui Mohamed</p>
+                    <p class="text-lg font-semibold text-center px-4 leading-4 dark:text-slate-200">Interfac Designer</p>
+                    <p class="text-xs text-slate-600 dark:text-slate-300 py-2">Tergui Mohamed</p>
                     <div class="text-xs justify-center items-center flex flex-row ">
                       <svg xmlns="http://www.w3.org/2000/svg" width="16" height="13" viewBox="0 0 16 13" fill="none">
                         <path
                           d="M7.02609 0.300781L5.28709 4.77278H0.871094L4.46209 7.50078L3.22209 12.0088L7.02609 9.45978L10.8311 12.0088L9.59109 7.50078L13.1811 4.77278H8.76609L7.02609 0.300781Z"
                           fill="#FFB331" />
                       </svg>
-                      <p class="text-gray-600"><strong>5.0 </strong>(117)</p>
+                      <p class="text-gray-600 dark:text-gray-200"><strong>5.0 </strong>(117)</p>
                     </div>
                   </div>
                 </div>
@@ -371,7 +371,7 @@
           </li>
 
           <li class="slideBtn hover:bg-purple-400 hover:cursor-pointer rounded-full w-1.5 h-1.5 mx-2 bg-gray-300">
-            <a href="#slide3" class="bg-purple-900 text-purple-900"></a>
+            <a href="#slide3" class="bg-purple-600 text-purple-600"></a>
           </li>
 
           <li class="slideBtn hover:bg-indigo-800 hover:cursor-pointer rounded-full w-1.5 h-1.5 mx-2 bg-gray-300">
