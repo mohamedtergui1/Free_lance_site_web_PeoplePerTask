@@ -16,6 +16,7 @@
 
 .categories-section .category-card:hover {
     border-bottom: 2px solid gray;
+}
 html {
 	overflow-y: scroll;
 }
@@ -74,6 +75,7 @@ footer{
 .darkmodeBtn:hover path{
     fill: black;
     transform: scale(1.05);
+}
 .tab-group {
 	list-style: none;
 	padding: 0;
