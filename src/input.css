@@ -2,6 +2,7 @@
 @tailwind components;
 @tailwind utilities;
 
+/* Categories */
 .transition-left {
     transition: left 1s;
 }
@@ -13,6 +14,8 @@
 	box-sizing: border-box;
 }
 
+.categories-section .category-card:hover {
+    border-bottom: 2px solid gray;
 html {
 	overflow-y: scroll;
 }
@@ -30,6 +33,47 @@ body {
 	box-shadow: 0 4px 10px 4px rgba(19, 35, 47, 0.3);
 }
 
+.categories-section .category-card:hover a h3, .freelancers-section .freelancer-card:hover .title, .offers-section .offer-card:hover .title {
+    text-decoration: underline;
+}
+
+.categories-section .category-card div {
+    background-image: linear-gradient(to bottom, rgba(78, 78, 78, 0.446), rgba(243, 243, 243, 0), rgba(172, 172, 172, 0));
+}
+
+.scroll-left:disabled svg path , .scroll-right:disabled svg path{
+    fill: rgb(208, 206, 206);
+}
+
+.freelancer-card:hover, .offer-card:hover{
+    transform: translateY(-2px);
+}
+
+.companies-section img{
+    mix-blend-mode: color-burn;
+}
+
+footer{
+    background-color: #18202B;
+}
+
+/* Dark mode */
+.dark .specialities a{
+    background-color: rgb(83, 91, 91);
+}
+
+.dark .companies-section svg :last-child{
+    fill: white;
+}
+
+.lightmodeBtn:hover path{
+    fill: white;
+    transform: scale(1.05);
+}
+
+.darkmodeBtn:hover path{
+    fill: black;
+    transform: scale(1.05);
 .tab-group {
 	list-style: none;
 	padding: 0;
