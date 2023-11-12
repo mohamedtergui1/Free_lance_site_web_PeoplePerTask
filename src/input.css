@@ -41,6 +41,14 @@ footer{
     fill: white;
 }
 
+.lightmodeBtn{
+    display: none;
+}
+
+.dark .lightmodeBtn {
+    display: block;
+}
+
 .lightmodeBtn:hover path{
     fill: white;
     transform: scale(1.05);
