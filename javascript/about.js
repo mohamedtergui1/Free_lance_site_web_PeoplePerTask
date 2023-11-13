@@ -8,3 +8,13 @@ btn_faq.forEach((btn, index) => {
       
     });
   });
+  //function for modal 
+const modalContent = document.getElementById('modal_content');
+
+function openModal() {
+    modalContent.classList.remove('hidden');
+}
+
+function closeModal() {
+    modalContent.classList.add('hidden');
+}
