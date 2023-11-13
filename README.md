@@ -31,11 +31,11 @@ This project is a web-based freelance platform's frontend, showcasing the user i
 
 ### Contributors
 
-- TERGUI Mohamed: 
-- EL MAHFOUDI Nada:
-- MIESSAL Mohammed:
-- ELOUISSI Yassine:
-- AIT TAMGHART Abdelghani: main page development
+- TERGUI Mohamed: Dashboard page
+- EL MAHFOUDI Nada: About page
+- MIESSAL Mohammed: Contact & auth pages
+- ELOUISSI Yassine: Search page
+- AIT TAMGHART Abdelghani: main page
 
 ### Libraries and Frameworks
 
