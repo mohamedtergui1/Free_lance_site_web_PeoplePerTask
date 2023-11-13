@@ -8,12 +8,14 @@ const btn_messagInbox =document.querySelectorAll(".btn_messag_inbox")
 //    });
 btn_messagInbox.forEach((button, i) => {
     button.addEventListener('click', () => {
-      emailMessage[i].classList.toggle("h-14");
+      emailMessage[i].classList.toggle("h-20");
+      emailMessage[i].classList.toggle("sm:h-14");
       emailMessage[i].classList.toggle("h-auto");
       for(let j =0;j<emailMessage.length;j++){
         if(j!==i){
             emailMessage[j].classList.remove("h-auto");
-            emailMessage[j].classList.add("h-14");
+            emailMessage[j].classList.add("sm:h-14");
+            emailMessage[j].classList.add("h-20");
         }
       }
     });
